@@ -1,0 +1,50 @@
+{
+  "name": "@zebra-c/eslint-config",
+  "version": "0.1.1",
+  "description": "A collection of configuration files containing prettier, eslint",
+  "author": "zebra-c",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.json"
+  },
+  "homepage": "https://github.com/zebra-c/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zebra-c/eslint-config.git"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-vue": "^6.0.1",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.3",
+    "vue-eslint-parser": "^7.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=3.7.3"
+  },
+  "keywords": [
+    "eslintrc",
+    "react",
+    "vue",
+    "zebra",
+    "prettier",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.3"
+  }
+}
