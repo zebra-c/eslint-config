@@ -2,6 +2,8 @@
 
 > 支持 vue、react umi
 
+[![npm version](https://badge.fury.io/js/%40zebra-c%2Feslint-config.svg)](https://badge.fury.io/js/%40zebra-c%2Feslint-config)
+
 ## 安装
 
 ```
