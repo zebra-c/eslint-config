@@ -1,47 +1,101 @@
 # @zebra-c/eslint-config
 
-> 支持 vue、jsx、js、ts、tsx、html
+> 支持 vue、react umi
 
 ## 安装
 
 ```
-npm add -D @zebra-c/eslint-config
+npm install @zebra-c/eslint-config -D
 ```
 
-## .eslintrc.js
+## Vue
+
+### .eslintrc.js
 
 Add to your eslint config (`.eslintrc.js`):
 
 ```js
 module.exports = {
-  extends: require('@zebra-c/eslint-config/dist/eslint.vue.js'),
-}
-```
-
-## More
-
-### .eslintignore
-
-```
-!.eslintrc.js
-!.prettierrc.js
+  extends: [require.resolve("@zebra-c/eslint-config/dist/eslint.vue")]
+};
 ```
 
 ### .prettierrc.js
 
 ```js
+const fabric = require("@zebra-c/eslint-config");
+
 module.exports = {
-  ...require('@zebra-c/eslint-config/dist/.prettierrc.js'),
-}
+  ...fabric.prettier
+};
 ```
 
-### .prettierignore
+## React Umi
+
+### .eslintrc.js
+
+```js
+module.exports = {
+  extends: [require.resolve("@zebra-c/eslint-config/dist/eslint.umi")]
+};
+```
+
+### .prettierrc.js
+
+```js
+const fabric = require("@zebra-c/eslint-config");
+
+module.exports = {
+  ...fabric.prettier
+};
+```
+
+## .prettierignore
 
 ```
-**/node_modules/*
+**/*.svg
+package.json
+.umi
+.umi-production
+/dist
+.dockerignore
+.DS_Store
+.eslintignore
+*.png
+*.toml
+docker
+.editorconfig
+Dockerfile*
+.gitignore
+.prettierignore
+LICENSE
+.eslintcache
+*.lock
+yarn-error.log
+.history
+
+./src/styles/icons/**
+.env
+.env.local
+**.sh
+
 ```
 
-### .editorconfig
+## .eslintignore
+
+```
+/lambda/
+/scripts
+/config
+.history
+/src/styles/icons/
+/static/
+.stylelintrc.js
+.prettierrc.js
+.config/config.ts
+```
+
+## .editorconfig
 
 ```
 # EditorConfig is awesome: http://EditorConfig.org
